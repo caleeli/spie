@@ -1,0 +1,25 @@
+{
+  "name": "nano2",
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "datatables.net-buttons": "^1.2.4",
+    "datatables.net-responsive-bs": "^2.1.1",
+    "bootstrap": "^3.3.7",
+    "bootswatch": "^3.3.7",
+    "jstree": "^3.3.3",
+    "chart.js": "chartjs#^2.4.0",
+    "datatables-fixedcolumns": "datatables-fixedColumns#^3.2.2",
+    "jq-ajax-progress": "^0.1.9"
+  }
+}

@@ -1,0 +1,66 @@
+
+// Body
+//$body-bg: #f5f8fa;
+$body-bg: white;
+
+// Borders
+$laravel-border-color: darken($body-bg, 10%);
+$list-group-border: $laravel-border-color;
+$navbar-default-border: $laravel-border-color;
+$panel-default-border: $laravel-border-color;
+$panel-inner-border: $laravel-border-color;
+
+// Brands
+$brand-primary: #3097D1;
+$brand-info: #8eb4cb;
+$brand-success: #2ab27b;
+$brand-warning: #cbb956;
+$brand-danger: #bf5329;
+
+// Typography
+$font-family-sans-serif: "Raleway", sans-serif;
+$font-size-base: 14px;
+$line-height-base: 1.6;
+$text-color: black;
+
+// Navbar
+$navbar-default-bg: $body-bg;
+
+// Buttons
+//$btn-default-color: $text-color;
+//$btn-default-border: $text-color;
+//$btn-default-bg: #fff;
+
+
+// Inputs
+$input-border: lighten($text-color, 40%);
+$input-border-focus: lighten($brand-primary, 25%);
+$input-color-placeholder: lighten($text-color, 30%);
+
+// Panels
+$panel-default-heading-bg: #fff;
+
+$icon-font-path: '/../bower_components/bootstrap/dist/fonts/';
+
+$table-cell-padding: 2px;
+
+@mixin linearGradientV($top, $bottom, $important:null){
+    background: $top $important; /* Old browsers */
+    background: -moz-linear-gradient(top,  $top 0%, $bottom 100%) $important; /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,$top), color-stop(100%,$bottom)) $important; /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  $top 0%,$bottom 100%) $important; /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  $top 0%,$bottom 100%) $important; /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  $top 0%,$bottom 100%) $important; /* IE10+ */
+    background: linear-gradient(to bottom,  $top 0%,$bottom 100%) $important; /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#000000',GradientType=0 ) $important; /* IE6-9 */
+}
+@mixin linearGradientH($top, $bottom, $important:null){
+    background: $top $important; /* Old browsers */
+    background: -moz-linear-gradient(left,  $top 0%, $bottom 100%) $important; /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%,$top), color-stop(100%,$bottom)) $important; /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(left,  $top 0%,$bottom 100%) $important; /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(left,  $top 0%,$bottom 100%) $important; /* Opera 11.10+ */
+    background: -ms-linear-gradient(left,  $top 0%,$bottom 100%) $important; /* IE10+ */
+    background: linear-gradient(to right,  $top 0%,$bottom 100%) $important; /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#000000',GradientType=1 ) $important; /* IE6-9 */
+}
